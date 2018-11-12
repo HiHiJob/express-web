@@ -1,0 +1,23 @@
+{
+    "name": "web", //项目名称
+    "script": "./bin/www", //要执行的脚本
+    "cwd": "./", //项目所在目录
+    "max_memory_restart": "300M",
+    "watch": [ //添加受监控的文件，以便自动更新
+        "public",
+        "views",
+        "routes"
+    ],
+    "ignore_watch": [ //不监视的文件
+        "node_modules"
+    ],
+    "env": {
+        "NODE_ENV": "dev"
+    },
+    "log_file": "/data/logs/pm2/web/combine.log",
+    "out_file": "/data/logs/pm2/web/web.log",
+    "error_file": "/data/logs/pm2/web/err.log",
+        "watch_options": { //监视配置，具体见 http://pm2.keymetrics.io/docs/usage/watch-and-restart/
+            "followSymlinks": false
+    }
+}
