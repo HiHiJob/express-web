@@ -11,13 +11,10 @@
     "ignore_watch": [ //不监视的文件
         "node_modules"
     ],
-    "env": {
-        "NODE_ENV": "dev"
-    },
     "log_file": "/data/logs/pm2/web/combine.log",
     "out_file": "/data/logs/pm2/web/web.log",
     "error_file": "/data/logs/pm2/web/err.log",
-        "watch_options": { //监视配置，具体见 http://pm2.keymetrics.io/docs/usage/watch-and-restart/
+    "watch_options": { //监视配置，具体见 http://pm2.keymetrics.io/docs/usage/watch-and-restart/
             "followSymlinks": false
     }
 }
